@@ -1,0 +1,72 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+       <div id="form" style="margin : 0px 50px 0px 50px">
+           
+            <form onSubmit="return check()">
+                First Name : <input type="text" id="fname" style="margin:0px 0px 0px 3px"><span id="ffname"></span><br>
+                Last  Name :<input type="text" id="lname" style="margin:0px 0px 0px 9px"><span id="llname"></span><br>
+                Email :<input type="text" id="email" style="margin:0px 0px 0px 40px"><span id="eemail"></span> <br>
+                Password :<input type="text" id="pass" style="margin:0px 0px 0px 17px"><span id="ppass"></span> <br>
+                District :<select id="district" style="margin:0px 0px 0px 31px">
+                    <option value="ab" selected="selected"> Select a district</option> 
+                    <option value="DH">Dhaka</option>
+                    <option value="Rj">Raj</option>
+                    <option value="Rn">Rang</option>
+                </select>
+                <span id="ddistrict"></span>
+                <br>
+                Gender :<input type="radio" name="gender" value="male" checked ="checked" style="margin:0px 0px 0px 27px">Male
+                <input type="radio" name="gender" value="female"> Female <span id="gender"></span><br><br> 
+                <input type="submit" value="Submit">
+            </form>
+           
+        </div>
+        <script>
+            function check(){
+                var x = 1;
+                var fname = document.getElementById("fname");
+                var lname = document.getElementById("lname");
+                var email = document.getElementById("email");
+                var pass = document.getElementById("pass");
+                var dis = document.getElementById("district");
+                //var gender = document.getElementById("")
+                var filter = /^[A-Za-z0-9]+@[A-Za-z]+.[A-Za-z]$/;
+                var gen = document.getElementById("")
+              
+                if(fname.value.length == 0){
+                    document.getElementById("ffname").innerHTML = "First name Can't be black";
+                    x = 0;
+                }
+                if(lname.value.length == 0){
+                    document.getElementById("llname").innerHTML = "Last name Can't be black";
+                    x = 0;
+                }
+                if(email.value.length == 0){
+                    document.getElementById("eemail").innerHTML = "email Can't be black";
+                    x = 0;
+                }
+                else if(!filter.test(email.value)){
+                    x = 0;
+                    document.getElementById("eemail").innerHTML = "Not a valid email";
+                }
+                if(dis.value == "ab" ){
+                    x = 0;
+                    document.getElementById("ddistrict").innerHTML = "Select a district";
+                }
+                
+                if(pass.value.length < 8){
+                    x = 0;
+                    document.getElementById("ppass").innerHTML = "Password must be atleast 8"
+                } 
+                
+                if(x == 1) return true;
+                return false;
+                
+                
+            }
+        </script>
+    </body>
+</html>

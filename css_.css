@@ -1,0 +1,84 @@
+#head{
+    margin: 0 0 0 100px;
+}
+#uiu{
+    padding: 60px 0 0 0;
+}
+#des{
+    margin: 0 0 0 100px;
+    font-family:cursive;
+    float: left;
+}
+#line{
+    background-color: brown;
+    color: white;
+    text-align:  center;
+    
+    
+}
+#a{
+    margin: 0 0 0 100px;
+    color: wheat;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    font-size: 25px;
+   
+}
+#b{
+    margin: 50px 0 0 100px;
+    color: black;
+    background-color:aqua;
+    text-decoration: none;
+    font-size: 25px;
+}
+#sign{
+    font-size: 40px;
+    color:dimgrey;
+    margin: 200px 0 0 200px;
+}
+#sign_form{
+    align-content: center;
+    background-color: antiquewhite;
+    margin: 100px 600px 50px 200px;
+    padding: 30px;
+    font-family: cursive;
+}
+#bottom{
+    margin: 0 0 0 200px;
+}
+#cre{
+    font-size: 40px;
+    color:darkslategrey;
+    margin: 200px 0 0 200px;
+}
+.sign_up{
+    
+    
+    align-content: center;
+    background-color: antiquewhite;
+    margin: 0 600px 50px 130px;
+    padding: 30px;
+    font-family: cursive;
+    
+}
+#s4{
+        
+    
+    align-content: center;
+    background-color: antiquewhite;
+    margin: 0 600px 50px 130px;
+    padding: 30px;
+    font-family: cursive;
+    
+}
+.red{
+    color: red;
+}
+#s3{
+    font-family: cursive;
+    margin: 50px 0 0 300px;
+    background-color: red;
+    
+    
+    
+}
